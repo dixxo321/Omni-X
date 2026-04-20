@@ -1,20 +1,36 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# OmniMesh X
 
-# Run and deploy your AI Studio app
+OmniMesh X is a multimodal, agentic AI operating system that can reason, plan, retrieve memory, use tools, coordinate specialist agents, route across model providers, enforce safety policies, and operate under full observability. The architecture is engineered to run seamlessly via secure Action-Gated execution while providing robust ecosystem-level intelligence.
 
-This contains everything you need to run your app locally.
+## 🚀 Architecture Highlights
 
-View your app in AI Studio: https://ai.studio/apps/31dedd76-cf09-4408-846c-5030664e909c
+### Level 1: Foundation & Base Abstractions
+* **API Server:** High-performance REST architecture built with FastAPI.
+* **Provider Routing:** Dynamic execution routing between foundation models (`MockAdapter`, `Gemini`, `vLLM`).
+* **Settings Management:** Strictly typed Pydantic configuration and schema enforcement.
 
-## Run Locally
+### Level 2: Cognition, Memory & Safety
+* **Reasoning:** Task planner and verifier capable of breaking complex objectives into structured node graphs.
+* **Safety Governors (`ActionGate`):** Enforces rigorous privilege controls, stopping unverified or dangerous payloads dynamically.
+* **Vector Memory (`LocalMockIndex`):** Built-in abstract interfaces and mocked indices for semantic vector search.
+* **Observability:** Granular execution tracing mapping system latency, token consumption, and action flow.
+* **Classifiers:** `CyberMisuseClassifier` identifies hostile prompt injection before touching inference pipelines.
 
-**Prerequisites:**  Node.js
+### Level 3: Advanced Intelligence & Ecosystem
+* **Agents:** Specialist `CodeAgent` running AST sand-boxing and progressive repair loops, managed by an orchestral `ExecutiveAgent`.
+* **Tools (`PythonTool`, `BashTool`):** Hyper-restricted sandbox containers preventing system imports and destructive binaries natively at execution.
+* **Alignment:** Embedded Reward Mode mechanisms bridging RLHF/DPO logic to shape continuous model safety vs. helpfulness dynamics.
+* **Inference Pipeline:** Foundational multi-layer transformer blueprints supporting KV-caching logic structure.
+* **Release Matrices:** Automated evaluation harness driving gate-release telemetry.
 
+## 🔥 Dashboard Integration
+The system integrates an adaptive **Sophisticated Dark** React dashboard mapping actual pulse telemetry, tracing output states, and global node saturation directly to the kernel layer.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## ⚙️ Initializing the System
+
+1. Install backend requirements via `make install`.
+2. Initialize the background API: `make run` or `.scripts/launch_api.sh`
+3. Launch the web UI via `npm run dev`.
+
+---
+*Built openly as a true OS framework. No proprietary boundaries.*
