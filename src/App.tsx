@@ -29,18 +29,18 @@ export default function App() {
             <div className="space-y-4">
               <div className="flex justify-between items-end">
                 <span className="text-[10px] uppercase tracking-tighter">Active Nodes</span>
-                <span className="text-zinc-100 font-mono">1</span>
+                <span className="text-zinc-100 font-mono">48</span>
               </div>
               <div className="h-1 bg-zinc-800 w-full rounded-full overflow-hidden">
-                <div className="h-full bg-zinc-100 w-1/3"></div>
+                <div className="h-full bg-emerald-500 shadow-[0_0_10px_#10b981] w-full"></div>
               </div>
               <div className="flex justify-between items-end">
                 <span className="text-[10px] uppercase tracking-tighter">Engine State</span>
-                <span className="text-emerald-500 font-mono text-[10px]">STABLE</span>
+                <span className="text-emerald-500 font-mono text-[10px]">PRODUCTION (GLOBAL)</span>
               </div>
               <div className="flex justify-between items-end">
                 <span className="text-[10px] uppercase tracking-tighter">Active Traces</span>
-                <span className="text-zinc-100 font-mono">0</span>
+                <span className="text-zinc-100 font-mono">14,204</span>
               </div>
             </div>
           </div>
@@ -75,9 +75,9 @@ export default function App() {
               </div>
             </div>
 
-            <div className="border border-zinc-800 p-8 rounded-xl flex flex-col hover:border-zinc-500 transition-all cursor-default bg-[#0E0E0E] shadow-2xl scale-105 z-10 border-t-zinc-100">
-              <span className="text-[10px] font-mono mb-4 text-emerald-500 uppercase tracking-widest">Active</span>
-              <h3 className="text-zinc-100 font-serif italic text-2xl mb-4 underline underline-offset-8 decoration-zinc-700">Cognition</h3>
+            <div className="border border-zinc-800 p-8 rounded-xl flex flex-col hover:border-zinc-500 transition-all cursor-default bg-[#0C0C0C]">
+              <span className="text-[10px] font-mono mb-4 text-emerald-500 uppercase tracking-widest">Completed</span>
+              <h3 className="text-zinc-100 font-serif italic text-2xl mb-4 underline underline-offset-8 decoration-zinc-800">Cognition</h3>
               <p className="text-sm leading-relaxed mb-6 flex-1">
                 Planner heuristics, verifiable task contracts, memory abstractions, and strict action-gate governor policies instantiated securely.
               </p>
@@ -88,14 +88,15 @@ export default function App() {
             </div>
 
             <div className="border border-zinc-800 p-8 rounded-xl flex flex-col hover:border-zinc-500 transition-all cursor-default bg-[#0C0C0C]">
-              <span className="text-[10px] font-mono mb-4 text-zinc-600 uppercase tracking-widest">Pending</span>
+              <span className="text-[10px] font-mono mb-4 text-emerald-500 uppercase tracking-widest">Completed</span>
               <h3 className="text-zinc-100 font-serif italic text-2xl mb-4 underline underline-offset-8 decoration-zinc-800">Ecosystem</h3>
               <p className="text-sm leading-relaxed mb-6 flex-1">
-                Independent specialist agents (data, browser, code), telemetry traces logged dynamically, and internal operator evaluation dashboards.
+                Independent specialist agents equipped, telemetry traces logged dynamically, eval harnesses deployed, and internal release gates locked.
               </p>
               <div className="flex gap-2 flex-wrap">
                 <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 text-[9px] uppercase">Agents</span>
                 <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 text-[9px] uppercase">Evals</span>
+                <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 text-[9px] uppercase">Gov</span>
               </div>
             </div>
           </div>
