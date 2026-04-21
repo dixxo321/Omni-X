@@ -38,8 +38,8 @@ Ensure you have the following installed on your system:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/omni-x.git
-cd omni-x
+git clone https://github.com/yourusername/Omni-x.git
+cd Omni-x
 ```
 
 ### 2. Environment Configuration
