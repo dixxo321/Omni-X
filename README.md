@@ -1,6 +1,6 @@
-# OmniMesh X
+# Omni-x
 
-OmniMesh X is a multimodal, agentic AI operating system that can reason, plan, retrieve memory, use tools, coordinate specialist agents, route across model providers, enforce safety policies, and operate under full observability. The architecture is engineered to run seamlessly via secure Action-Gated execution while providing robust ecosystem-level intelligence.
+Omni-x is a multimodal, agentic AI operating system that can reason, plan, retrieve memory, use tools, coordinate specialist agents, route across model providers, enforce safety policies, and operate under full observability. The architecture is engineered to run seamlessly via secure Action-Gated execution while providing robust ecosystem-level intelligence.
 
 ## 🚀 Architecture Highlights
 
