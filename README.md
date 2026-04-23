@@ -1,6 +1,6 @@
-# Omni-x
+# OmniMesh X
 
-Omni-x is a multimodal, agentic AI operating system that can reason, plan, retrieve memory, use tools, coordinate specialist agents, route across model providers, enforce safety policies, and operate under full observability. The architecture is engineered to run seamlessly via secure Action-Gated execution while providing robust ecosystem-level intelligence.
+OmniMesh X is a multimodal, agentic AI operating system that can reason, plan, retrieve memory, use tools, coordinate specialist agents, route across model providers, enforce safety policies, and operate under full observability. The architecture is engineered to run seamlessly via secure Action-Gated execution while providing robust ecosystem-level intelligence.
 
 ## 🚀 Architecture Highlights
 
@@ -38,13 +38,13 @@ Ensure you have the following installed on your system:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/Omni-x.git
-cd Omni-x
+git clone https://github.com/dixxo321/Omni-X.git
+cd Omni-X
 ```
 
 ### 2. Environment Configuration
 
-Create a `.env` file to store your protected variables. If a `.env.example` is provided, you can copy it:
+Create a `.env` file to store your protected variables. If a `.env.example` is provided in the root directory, you can copy it:
 
 ```bash
 cp .env.example .env
@@ -56,8 +56,8 @@ Ensure you add a valid `GEMINI_API_KEY` (or the respective provider key you plan
 The core OS architecture runs on Python. To initialize the FastAPI backend:
 
 ```bash
-# Navigate to the backend directory (if separated)
-cd omnimesh-x
+# Navigate to the backend directory
+cd app/applet/omnimesh-x
 
 # Create a virtual environment (recommended)
 python3 -m venv venv
@@ -75,9 +75,12 @@ make run
 
 ### 4. Frontend Setup (React Dashboard)
 
-Open a **new terminal tab/window**, keep the backend running, and initialize the frontend dashboard UI from the project root:
+Open a **new terminal tab/window**, keep the backend running, and initialize the frontend dashboard UI from the project root (`Omni-X` directory):
 
 ```bash
+# Ensure you are back in the root directory
+# cd Omni-X
+
 # Install Node dependencies
 npm install
 
