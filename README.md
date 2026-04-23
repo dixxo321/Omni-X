@@ -57,7 +57,7 @@ The core OS architecture runs on Python. To initialize the FastAPI backend:
 
 ```bash
 # Navigate to the backend directory
-cd app/applet/omnimesh-x
+cd backend
 
 # Create a virtual environment (recommended)
 python3 -m venv venv
